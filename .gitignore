@@ -1,6 +1,8 @@
 venv
+.venv
 __pycache__/
 __pycache__/*
+linux-commands/aws
 commands/set_environment.sh
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
