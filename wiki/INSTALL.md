@@ -1,0 +1,1 @@
+python -m pip install tensorflow Pillow Flask boto3 SQLAlchemy joblib requests tensorflow

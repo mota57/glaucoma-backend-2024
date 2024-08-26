@@ -14,6 +14,5 @@ class ConfigUtils:
         return var_value
 
 class GlaucomaConfig:
-    def EB_GLAUCOMA_API_WEBSITE_STATIC_S3():
-        return ConfigUtils.get_environment_variable('EB_GLAUCOMA_API_WEBSITE_STATIC_S3')
+    EB_GLAUCOMA_API_WEBSITE_STATIC_S3 = ConfigUtils.get_environment_variable('EB_GLAUCOMA_API_WEBSITE_STATIC_S3')
 

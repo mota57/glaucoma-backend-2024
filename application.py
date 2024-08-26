@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
-import patient_service
+import patient
 
 # EB looks for an 'app' callable by default.
 app = Flask(__name__)
 
-version = "0.3"
+version = "0.4"
 # add a rule for the index page.
 app.add_url_rule('/', 'index', (lambda: "<html><body> version: " + version +  "</body></html>"))
 
@@ -13,8 +13,7 @@ app.add_url_rule('/', 'index', (lambda: "<html><body> version: " + version +  "<
 def handle_json():
     if request.is_json:
         data = request.get_json()
-        result = patient_service.process_image_prediction(data)
-        # Return a response
+        result = patient.service.process_image_prediction(data)
         return jsonify(result), 200
     else:
         return jsonify({'error': 'Invalid content type'}), 400

@@ -4,7 +4,6 @@ import base64
 import uuid
 import io
 import traceback
-import requests
 #import tensorflow as tf
 import numpy as np
 #import keras
@@ -35,7 +34,7 @@ def process_image_prediction(json_data):
         # call prediction
         # Upload the file to S3
         s3.put_object(
-            Bucket=GlaucomaConfig.EB_GLAUCOMA_API_WEBSITE_STATIC_S3(),
+            Bucket=GlaucomaConfig.EB_GLAUCOMA_API_WEBSITE_STATIC_S3,
             Key="images/" + filename,
             Body=file_content,
         )
