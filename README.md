@@ -2,6 +2,12 @@
 - follow the following tutorial 60m
 https://github.com/baibhavsagar/Deploy-Flask-App-on-AWS-EC2-Instance
 
+## find program id by specific port 
+lsof -i :<port>
+
+## kill a program id by force
+kill -9 <pid>
+
 # zip
 git archive -v -o myapp.zip --format=zip HEAD
 

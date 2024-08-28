@@ -1,9 +1,31 @@
 
+## TODO 8/27/2024 PART 1
+* [X] - create CREATE, GET, UPDATE methods for patient 
+  - [x] test /patients/create
+  - [x] test /patients/get_by_patientid
+  - [x] test /patients/update
+  
+## TODO 9/27/2024 PART 2
+    - [] test /doctors/create
+    - [] test /doctors/find_by_id
+    - [] test /doctors/update
+
+
+## backlog
+- implement amazon cognito to log user with google account and secure route.
+- create unique for identiciation number.
+    - validate you cant create more than one user with the same identification number when creating a patient, doctor and so on.
+- Add validation for required parameters at /patients/post
+    - [] Add validation required for patient_doctor_id
+- [] return the files for /patients/get_by_patientid
+- [] test /patients/delete
+    - basically we are going to add a new column in the database where we add the is_deleted
+    - add a global query where is_deleted objects cant be pull with orm.
+
+- [] - implement the following template https://github.com/tomasrasymas/flask-restful-api-template/blob/master/endpoints/users/resource.py
+
 ## Todo 8/23/2024
 * [x] - login as user in with aws
-* [] - create CRUD methods for person
-* [] - implement the following template https://github.com/tomasrasymas/flask-restful-api-template/blob/master/endpoints/users/resource.py
-
 
 ## todo past
 * create a repository in github in order to upload the code. total (60m)
