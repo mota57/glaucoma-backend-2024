@@ -1,17 +1,20 @@
 
+  
+## TODO 9/29/2024 PART 2
+    - [x] test /doctors/find_by_id
+    - [x] test /doctors/find_by_id  with patient files
+    - [x] At /doctors/find_by_id  Load patient_files.status = pfile.file_status.name
+    - [] test /doctors/create
+    - [] test /doctors/update
+    
 ## TODO 8/27/2024 PART 1
 * [X] - create CREATE, GET, UPDATE methods for patient 
   - [x] test /patients/create
   - [x] test /patients/get_by_patientid
   - [x] test /patients/update
-  
-## TODO 9/27/2024 PART 2
-    - [] test /doctors/create
-    - [] test /doctors/find_by_id
-    - [] test /doctors/update
-
 
 ## backlog
+- implement email address to the user table. For both patient and doctor.
 - implement amazon cognito to log user with google account and secure route.
 - create unique for identiciation number.
     - validate you cant create more than one user with the same identification number when creating a patient, doctor and so on.
